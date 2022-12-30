@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Lesson 22 JS</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221230203017">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<h1 class="header__title">
+					HOMEWORK LESSON №22
+				</h1>
+				<h2 class="header__subtitle">
+					JAVASCRIPT
+				</h2>
+			</div>
+		</header>
+		<main class="page">
+			<section class="syntax">
+				<div class="sintax__container">
+					<h3 class="sintax__title title">
+						Основы синтаксиса JAVASCRIPT. Структура кода. Инструкции. Режим use strict.
+					</h3>
+					<div class="sintax__image">
+						<picture><source srcset="img/sintax.webp" type="image/webp"><img src="img/sintax.jpg" alt="Image"></picture>
+					</div>
+					<div class="sintax__option option">
+						<h3 class="option__title">
+							Вариант №1
+						</h3>
+						<p>
+							console.log('Учим JS')
+						</p>
+						<p>
+							Вариант 1 - написан верно
+						</p>
+					</div>
+					<div class="sintax__option option">
+						<h3 class="option__title">
+							Вариант №2
+						</h3>
+						<p>
+							console.log('JS') <br>
+							console.log('Учим')
+						</p>
+						<p>
+							Вариант 2 - написан верно, но лучше разделить ;
+						</p>
+					</div>
+					<div class="sintax__option option">
+						<h3 class="option__title">
+							Вариант №3
+						</h3>
+						<p>
+							console.log('JS') console.log('Учим')
+						</p>
+						<p>
+							<span>
+								Вариант 3 - написан не верно, так как инструкции не разделены ; , нужно записать в 2 строки или
+								разделить
+								;
+							</span>
+						</p>
+					</div>
+					<div class="sintax__option option">
+						<h3 class="option__title">
+							Вариант №4
+						</h3>
+						<p>
+							console.log('Учим); <br>
+							console.log('JS');
+						</p>
+						<p>
+							<span>
+								Вариант 4 - написан не верно, так как строка дожны быть обёрнута в ковычки '' (console.log('Учим'))
+							</span>
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="variable">
+				<div class="variable__container">
+					<h3 class="variable_title title">
+						Переменные в JAVASCRIPT. Константы. Ключевые слова LET CONST VAR.
+					</h3>
+					<div class="variable__image">
+						<picture><source srcset="img/variable.webp" type="image/webp"><img src="img/variable.jpg" alt="Image"></picture>
+					</div>
+					<div class="variable__option option">
+						<h3 class="option__title">
+							Задание №1
+						</h3>
+						<p>
+							Придумай имя переменной для хранения цвета глаз пользователя сайта
+						</p>
+						<p>
+							Ответ: - userEyesColor
+						</p>
+					</div>
+					<div class="variable__option option">
+						<h3 class="option__title">
+							Задание №2
+						</h3>
+						<p>
+							Объяви две переменных - user и userName. Присвой значение "Вася" переменной userName.Скопируй значение
+							переменной userName в переменную user. Выведи в консоль переменную user. Результат должен быть Вася.
+						</p>
+						<p>
+							Ответ: <br>
+							let user; <br>
+							let userName; <br>
+							userName = "Вася";<br>
+							user = userName;<br>
+							console.log(user);
+						</p>
+					</div>
+					<div class="variable__option option">
+						<h3 class="option__title">
+							Вариант №1
+						</h3>
+						<p>
+							let user = "Вася" let age = 36
+						</p>
+						<p>
+							<span>
+								Вариант 1 - написан не верно.Между переменными необходимо ставить запятую.Переменная let пишеться один
+								раз и в конце не хватает ;
+							</span>
+						</p>
+					</div>
+					<div class="variable__option option">
+						<h3 class="option__title">
+							Вариант №2
+						</h3>
+						<p>
+							let user = "Вася" let age = 36
+						</p>
+						<p>
+							Вариант 2 - написан верно. Но лучше myAge писать стилем lowerCamelCcase
+						</p>
+					</div>
+					<div class="variable__option option">
+						<h3 class="option__title">
+							Вариант №3
+						</h3>
+						<p>
+							const BLOCK_SIZE = 14 + 50;
+						</p>
+						<p>
+							<span>
+								Вариант 3 - написан не верно. Так как это константа ,значение присваиваеться только в процессе
+								исполнения программы.
+							</span>
+						</p>
+					</div>
+					<div class="variable__option option">
+						<h3 class="option__title">
+							Вариант №4
+						</h3>
+						<p>
+							let user = "Вася" let age = 36
+						</p>
+						<p>
+							Вариант 4 - написан верно. Для констант значение которых известно изначально , название пишеться в верхнем
+							регистре.
+						</p>
+					</div>
+					<div class="variable__option option">
+						<h3 class="option__title">
+							Вариант №5
+						</h3>
+						<p>
+							if (true) {<br>
+							var size = 15;<br>
+							} <br>
+							console.log(size);
+						</p>
+						<p>
+							Вариант 3 - написан верно. Так как переменные объявленные с помощью слова var видны за пределами блока
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="datatype">
+				<div class="datatype__container">
+					<h3 class="datatype__title title">
+						Типы данных JAVASCRIPT. Null String Undefined Boolean Number и другие.
+					</h3>
+					<div class="datatype__image">
+						<picture><source srcset="img/datatype.webp" type="image/webp"><img src="img/datatype.jpg" alt="Image"></picture>
+					</div>
+					<div class="datatype__option option">
+						<h3 class="option__title">
+							Вариант №1
+						</h3>
+						<p>
+							let userAge = 36; <br>
+							let userInfo = "Фрілансер ${userAge}";
+						</p>
+						<p>
+							<span>
+								Вариант 1 - написан не верно. Такую структуру нужно записывать в обратные кавычки.
+							</span>
+						</p>
+					</div>
+					<div class="datatype__option option">
+						<h3 class="option__title">
+							Вариант №2
+						</h3>
+						<p>
+							let userHeight = 145 / 0;<br>
+							// Вернётся значение NaN <br>
+							console.log(userHeight);
+						</p>
+						<p>
+							<span>
+								Вариант 2 - написан не верно. Вернет значение Infinity.
+							</span>
+						</p>
+					</div>
+					<div class="datatype__option option">
+						<h3 class="option__title">
+							Вариант №3
+						</h3>
+						<p>
+							let userName; <br>
+							// Повернеться тип даних Null <br>
+							console.log(typeof userName);
+						</p>
+						<p>
+							<span>
+								Вариант 3 - написан не верно. Вернет значение undefined.
+							</span>
+						</p>
+					</div>
+					<div class="datatype__option option">
+						<h3 class="option__title">
+							Вариант №4
+						</h3>
+						<p>
+							let userSize = "45" / "8"; <br>
+							//Повернеться тип данних number <br>
+							console.log(typeof userSize);
+						</p>
+						<p>
+							Вариант 4 - написан верно. Вернет значение number.
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20221230203017"></script>
+</body>
+
+</html>
